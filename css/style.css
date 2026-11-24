@@ -1,0 +1,211 @@
+/* =========================================
+   Denise's Kitchen - Greek Restaurant Theme
+   Colors: Aegean blue, whitewash, gold, olive
+   ========================================= */
+
+/* Color palette (reference)
+   Aegean blue: #0d3b66
+   Sea blue:    #1f6fb2
+   Whitewash:   #fdfbf6
+   Sand:        #f3ecdd
+   Gold:        #c9a227
+   Olive:       #6b7f3a
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  color: #2b2b2b;
+  background-color: #fdfbf6;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Headings use the classical Cinzel font */
+h1, h2, h3, h4 {
+  font-family: 'Cinzel', Georgia, serif;
+  color: #0d3b66;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+/* ---------- Navigation ---------- */
+.site-nav {
+  position: sticky;
+  top: 0;
+  background-color: #0d3b66;
+  color: #fdfbf6;
+  z-index: 10;
+  border-bottom: 3px solid #f2c230;
+}
+
+.site-nav .logo {
+  font-family: 'Cinzel', Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.site-nav .w3-button:hover {
+  background-color: #c9a227 !important;
+  color: #0d3b66 !important;
+}
+
+/* ---------- Welcome / Hero ---------- */
+.welcome {
+  padding: 140px 16px;
+  color: #ffffff;
+  /* Santorini photo with a dark blue overlay so the white text is easy to read */
+  background:
+    linear-gradient(rgba(13, 59, 102, 0.55), rgba(13, 59, 102, 0.55)),
+    url("../assets/hero.jpg") center / cover no-repeat;
+}
+
+.welcome h1 {
+  font-size: 64px;
+  color: #ffffff;
+  margin: 8px 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #d6eaf5;
+  font-weight: 700;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tagline {
+  font-size: 20px;
+  margin-bottom: 32px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-gold {
+  background-color: #f2c230;
+  color: #0d3b66;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 2px;
+}
+
+/* ---------- Greek key (meander) divider ---------- */
+.greek-key {
+  height: 40px;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M0 36 H40 M36 36 V4 H10 V30 H30 V10 H16 V24 H23' fill='none' stroke='%230d3b66' stroke-width='4'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  border-top: 4px solid #0d3b66;
+  border-bottom: 4px solid #0d3b66;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  padding: 64px 16px;
+}
+
+.subhead {
+  font-style: italic;
+  color: #6b7f3a;
+  margin-bottom: 40px;
+}
+
+.about-img {
+  border: 6px solid #fdfbf6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Menu ---------- */
+.menu-section {
+  background-color: #f3ecdd;
+}
+
+.course {
+  margin-bottom: 32px;
+}
+
+.course h3 {
+  font-size: 26px;
+  border-bottom: 2px solid #c9a227;
+  padding-bottom: 8px;
+}
+
+.course-sub {
+  display: block;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6b7f3a;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+}
+
+.menu-item h4 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.menu-item p {
+  margin-top: 0;
+  color: #555;
+}
+
+.price {
+  float: right;
+  color: #c9a227;
+  font-weight: 700;
+}
+
+/* ---------- Contact ---------- */
+.contact-box {
+  padding: 16px;
+}
+
+.contact-box h4 {
+  border-bottom: 1px solid #c9a227;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: #0d3b66;
+  color: #fdfbf6;
+  padding: 20px;
+}
+
+/* ---------- Smaller screens ---------- */
+@media (max-width: 600px) {
+  .welcome h1 {
+    font-size: 40px;
+  }
+
+  /* Stack the nav: logo on top, links centered underneath */
+  .site-nav {
+    text-align: center;
+  }
+
+  .site-nav .logo {
+    float: none;
+    width: 100%;
+  }
+
+  .site-nav .w3-right {
+    float: none !important;
+  }
+
+  .site-nav .w3-right .w3-bar-item {
+    float: none;
+    display: inline-block;
+    padding: 8px 10px;
+  }
+}
